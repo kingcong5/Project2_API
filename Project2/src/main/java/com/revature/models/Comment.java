@@ -22,8 +22,8 @@ public class Comment {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id")
-	@ApiModelProperty(name="id", 
+	@Column(name="comment_id")
+	@ApiModelProperty(name="comment_id", 
 	notes="an Integer value that serves as the unique identier for any comment entity",
 	required = true,
 	value = "1")
