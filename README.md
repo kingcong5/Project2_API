@@ -61,8 +61,17 @@ We will use this API to retrieve song information when a User adds a song to the
 Embedded spotify song previews in posts, so others can hear a brief snippet without having to open spotify.
 Users can add a spotify playlist to their profile that plays song previews. 
 Admins can delete posts, comments, and profile’s directly from the webpage. 
-
 ## ERD
 <br>
-<img src="./images/image1" style="background-color: #FFFFFF;">
+<img src="./imgs/image3.png" style="background-color: #000000;">
+<br>
+
+## Application Flow
+<br>
+<img src="./imgs/image1.png" style="background-color: #000000;">
+<br>
+
+## HTML Pages
+<br>
+<img src="./imgs/image2.png" style="background-color: #000000;">
 <br>
