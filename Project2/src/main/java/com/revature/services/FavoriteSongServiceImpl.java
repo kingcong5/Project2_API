@@ -47,4 +47,9 @@ public class FavoriteSongServiceImpl implements FavoriteSongService {
 		return false;
 	}
 
+	@Override
+	public List<FavoriteSong> getAllSongsByUser(int id) {
+		return frepo.findAllByUser(id);
+	}
+
 }
