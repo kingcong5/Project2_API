@@ -28,8 +28,7 @@ public class CommentServiceImpl implements CommentService {
 
 	@Override
 	public boolean updateComment(Comment comment) {
-		// Need to fix this
-		Comment target = comRepo.getReferenceById(comment);
+		Comment target = comRepo.findById(comment.getComment_id()).stream().findFirst().get();
 		target.setComment_body(comment.getComment_body());
 		return (comRepo.save(target) != null) ? true : false;
 	}
@@ -37,7 +36,8 @@ public class CommentServiceImpl implements CommentService {
 	@Override
 	public boolean deleteComment(Comment comment) {
 		// TODO Auto-generated method stub
-		return false;
+		comRepo.delete(comment);
+		return true;
 	}
 
 	
