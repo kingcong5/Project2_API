@@ -1,5 +1,7 @@
 package com.revature.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -42,7 +44,11 @@ public class CommentServiceImpl implements CommentService {
 
 	// update likes. likes = likes += 1
 	
-	// get all comments by post id
+	// get all comments
+	@Override
+	public List<Comment> getAllComments(){
+		return comRepo.findAll();
+	}
 	
 	
 	

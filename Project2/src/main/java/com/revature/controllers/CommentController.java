@@ -7,6 +7,7 @@ import static com.revature.util.ClientMessageUtil.DELETION_SUCCESSFUL;
 import static com.revature.util.ClientMessageUtil.UPDATE_FAILED;
 import static com.revature.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
 
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -70,16 +71,16 @@ public class CommentController {
 	 
 	 
 
-//	// to do
-//	@GetMapping("/comment")
-//	@ApiOperation(value="Find all comments")
-//	public @ResponseBody List<Comment> getAll() {
-//		return comServ.getAllComments();
-//	}
+	// get all comments
+	// this will get updated to get all comments by id
+	@GetMapping("/comments")
+	@ApiOperation(value="Find all comments")
+	public @ResponseBody List<Comment> getAll() {
+		return comServ.getAllComments();
+	}
 	 
 	 
-	 
-	 
+	
 	 
 	 
 	 
