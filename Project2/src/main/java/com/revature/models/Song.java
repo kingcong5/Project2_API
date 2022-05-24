@@ -15,15 +15,13 @@ public class Song {
 	@ApiModelProperty(name="id",
 	notes="an Integer value that serves as the unique identier for any song entity",
 	required = true,
-	value = "1")
-	private int id;
+	value = "1") int id;
 	
 	@Column(name="song_name")
 	@ApiModelProperty(name="name",
 	notes="a string value that serves as the name of the song",
 	required = true,
-	value = "test song name")
-	private String name;
+	value = "test song name") String name;
 	
 	@Column(name="song_artist")
 	@ApiModelProperty(name="artist",
