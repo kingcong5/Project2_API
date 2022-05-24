@@ -40,7 +40,9 @@ public class CommentServiceImpl implements CommentService {
 		return true;
 	}
 
+	// update likes. likes = likes += 1
 	
+	// get all comments by post id
 	
 	
 	
