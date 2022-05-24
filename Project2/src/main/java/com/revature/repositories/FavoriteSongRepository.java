@@ -1,5 +1,7 @@
 package com.revature.repositories;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -14,5 +16,9 @@ public interface FavoriteSongRepository extends JpaRepository<FavoriteSong, Inte
 	
 	@Query(value="SELECT * FROM favorite_songs WHERE fav_song_id=?1", nativeQuery = true)
 	public FavoriteSong findById(int id);
+	
+	@Query(value="SELECT * FROM favorite_songs WHERE fav_user_id=?1", nativeQuery = true)
+	public List<FavoriteSong> findAllByUser(int id);
+
 
 }
