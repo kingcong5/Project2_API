@@ -11,10 +11,17 @@ import com.revature.models.Comment;
 @Transactional
 public interface CommentRepository extends JpaRepository<Comment, Integer>{
 
-	// custom query to edit a comment
-	@Query(value="Update comments SET comment_body=?1 WHERE comment_id=?2", nativeQuery = true)
-	public boolean update(String comment_body, int comment_id);
+	// update comment_body and comment_likes by comment_id
+	@Query(value="Update comments PUT comment_body=?1 WHERE comment_id=?2", nativeQuery = true)
+	public boolean updateComment(String comment_body, int comment_likes, int comment_id);
 	
+	// get all comment info from comment_id
+	@Query(value="SELECT * FROM comments where comment_id=?1", nativeQuery = true)
+	public Comment findById(int comment_id);
+	
+	//update only comment body by comment_id
+	@Query(value="UPDATE comments SET comment_body=?1, WHERE comment_id=?2", nativeQuery = true)
+	public boolean updateCommentBody(String comment_body, int comment_id);
 }
 
 
