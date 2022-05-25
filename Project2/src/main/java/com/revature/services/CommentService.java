@@ -1,5 +1,7 @@
 package com.revature.services;
 
+import java.util.List;
+
 import com.revature.models.Comment;
 
 public interface CommentService {
@@ -15,5 +17,8 @@ public interface CommentService {
 	
 	//delete a comment
 	boolean deleteComment(Comment comment);
+	
+	//delete a comment
+	List<Comment> getAllComments();
 
 }
