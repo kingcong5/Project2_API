@@ -21,7 +21,6 @@ public class UserServiceImpl implements UserService{
 	
 	@Override
 	public boolean createUser(User user) {
-		
 		int pk = userRepo.save(user).getId();
 		return (pk > 0) ? true : false;
 	}
