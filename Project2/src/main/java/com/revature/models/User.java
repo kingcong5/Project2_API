@@ -24,7 +24,7 @@ public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="user_id")
-	@ApiModelProperty(name="id",
+	@ApiModelProperty(name="user_id",
 	notes="an Integer value that serves as the unique identier for user",
 	required = true,
 	value = "1")

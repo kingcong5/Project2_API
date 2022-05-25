@@ -18,16 +18,13 @@ public class FavoriteSong {
 	@ApiModelProperty(name="id",
 	notes = "an Integer value that serves as the unique identier for any fav song entity", 
 	required = true,
-	value = "1")
-	private int id;
+	value = "1") int id;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "song_id", referencedColumnName = "song_id")
-	private Song song;
+	@JoinColumn(name = "song_id", referencedColumnName = "song_id") Song song;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "user_id", referencedColumnName = "user_id")
-	private Song user;
+	@JoinColumn(name = "user_id", referencedColumnName = "user_id") Song user;
 
 	public FavoriteSong() {
 		super();
