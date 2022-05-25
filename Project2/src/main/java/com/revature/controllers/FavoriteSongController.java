@@ -46,13 +46,13 @@ public class FavoriteSongController {
 	
 	@GetMapping("/favoritesongs")
 	@ApiOperation(value="find all fav song")
-	public @ResponseBody List<Song> getAll(){
+	public @ResponseBody List<FavoriteSong> getAll(){
 		return fserv.getAllFavoriteSongs();
 	}
 
 	@GetMapping("/favoritesongsuser")
 	@ApiOperation(value="find all fav songs of a user")
-	public @ResponseBody List<Song> getUser(int id){
+	public @ResponseBody List<FavoriteSong> getUser(int id){
 		return fserv.getAllSongsByUser(id);
 	}
 	
