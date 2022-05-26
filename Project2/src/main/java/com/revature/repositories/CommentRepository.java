@@ -12,7 +12,7 @@ import com.revature.models.Comment;
 public interface CommentRepository extends JpaRepository<Comment, Integer>{
 
 	// update comment_body and comment_likes by comment_id
-	@Query(value="Update comments PUT comment_body=?1 WHERE comment_id=?2", nativeQuery = true)
+	@Query(value="Update comments PUT comment_body=?1 comment_likes=?2 WHERE comment_id=?3", nativeQuery = true)
 	public boolean updateComment(String comment_body, int comment_likes, int comment_id);
 	
 	// get all comment info from comment_id

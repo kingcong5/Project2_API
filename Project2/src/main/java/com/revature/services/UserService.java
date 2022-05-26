@@ -6,15 +6,22 @@ import com.revature.models.User;
 
 public interface UserService {
 
-	//public User login(String username, String password);
+	// Create new user
+	boolean createUser(User user);
 	
-	public boolean createUser(User user);
+	// Find user by ID
+	User getUserById(int user_id);
 	
-	public User findUserById(int id);
+	// Find all users
+	List<User> getAllUsers();
 	
-	public List<User> findAllUsers();
+	// Update user
+	boolean updateUser(User user);
 	
-	public boolean updateUser(User user);
+	// Update user password
+	boolean updateUserPassword(User user);
 	
-	public boolean deleteUser(User user);
+	// Delete User
+	boolean deleteUser(User user);
+	
 }

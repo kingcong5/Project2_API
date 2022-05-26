@@ -7,6 +7,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.models.Song;
 
+
+@Repository
+@Transactional
 public interface SongRepository extends JpaRepository<Song, Integer> {
 	
 	@Query(value="UPDATE songs SET song_name=?1, song_artist=?2, song_album=?3, song_art=?4, song_length=?5, song_url=?6 WHERE song_id=?7 ",nativeQuery = true)

@@ -46,10 +46,11 @@ class UserTest {
 		assertNull(u.getPassword());
 	}
 
+	@SuppressWarnings("unused")
 	@Test
 	void testUserIntStringStringStringStringString() {
 		User u = new User();
-		assertNull(u.getId());
+		assertNull(u.getUser_id());
 		assertNull(u.getF_name());
 		assertNull(u.getL_name());
 		assertNull(u.getFavorite_artist());
