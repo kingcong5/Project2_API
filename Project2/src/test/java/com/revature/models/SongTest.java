@@ -29,7 +29,7 @@ class SongTest {
 	@Test
 	void testSong() {
 		Song s = new Song();
-		assertNull(s.id);
+		assertNull(s.getId());
 		
 	}
 
@@ -47,7 +47,7 @@ class SongTest {
 	@Test
 	void testSongIntStringStringStringStringLongString() {
 		Song s = new Song();
-		assertNull(s.id);
+		assertNull(s.getId());
 		assertNull(s.getName());
 		assertNull(s.getArtist());
 		assertNull(s.getAlbum());
