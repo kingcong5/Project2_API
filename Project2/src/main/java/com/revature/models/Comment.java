@@ -36,10 +36,6 @@ public class Comment {
 	value = "test comment_body")
 	private String comment_body;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "user_id", referencedColumnName = "user_id")
-	private User user;
-	
 	@Column(name="comment_likes", unique=false)
 	@ApiModelProperty(name="comment_likes", 
 	notes="an Integer value that serves as the unique identier for any comment_likes",
@@ -47,10 +43,15 @@ public class Comment {
 	value = "4")
 	private int comment_likes;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "post_id", referencedColumnName = "post_id")
+	@OneToOne(cascade = CascadeType.MERGE)
+	@JoinColumn(name = "comment_post_id", referencedColumnName = "post_id")
 	private Post post;
 
+	@OneToOne(cascade = CascadeType.MERGE)
+	@JoinColumn(name = "comment_user_id", referencedColumnName = "user_id")
+	private User user;
+	
+	
 	
 	public Comment() {
 		super();
