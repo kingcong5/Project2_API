@@ -38,7 +38,7 @@ public class Comment {
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "user_id", referencedColumnName = "user_id")
-	private int user_id;
+	private User user;
 	
 	@Column(name="comment_likes", unique=false)
 	@ApiModelProperty(name="comment_likes", 
@@ -49,37 +49,30 @@ public class Comment {
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "post_id", referencedColumnName = "post_id")
-	private int post_id;
+	private Post post;
 
+	
 	public Comment() {
 		super();
 	}
 
-	public Comment(String comment_body) {
+
+	public Comment(String comment_body, User user, int comment_likes, Post post) {
 		super();
 		this.comment_body = comment_body;
-	}
-
-	public Comment(int comment_likes) {
-		super();
+		this.user = user;
 		this.comment_likes = comment_likes;
+		this.post = post;
 	}
 
-	public Comment(int comment_id, String comment_body, int user_id, int comment_likes) {
+
+	public Comment(int comment_id, String comment_body, User user, int comment_likes, Post post) {
 		super();
 		this.comment_id = comment_id;
 		this.comment_body = comment_body;
-		this.user_id = user_id;
+		this.user = user;
 		this.comment_likes = comment_likes;
-	}
-
-	public Comment(int comment_id, String comment_body, int user_id, int comment_likes, int post_id) {
-		super();
-		this.comment_id = comment_id;
-		this.comment_body = comment_body;
-		this.user_id = user_id;
-		this.comment_likes = comment_likes;
-		this.post_id = post_id;
+		this.post = post;
 	}
 
 }

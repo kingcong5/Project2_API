@@ -9,16 +9,24 @@ public interface CommentService {
 	//create a new comment
 	boolean createComment(Comment comment);
 	
-	//get comment by id
-	Comment getCommentById(int id);
+	// get all comment info from comment_id
+	Comment getCommentById(int comment_id);
 	
-	//update a comment
+	//get all comments
+	List<Comment> getAllComments();
+	
+	//update a comment body and likes by comment_id
 	boolean updateComment(Comment comment);
 	
-	//delete a comment
-	boolean deleteComment(Comment comment);
+	//update comment body by comment_id
+	boolean updateCommentBody(Comment comment);
 	
-	//delete a comment
-	List<Comment> getAllComments();
+	//delete a comment by comment_id
+	boolean deleteComment(Comment comment);
+
+
 
 }
+
+
+
