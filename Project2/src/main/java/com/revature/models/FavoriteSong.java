@@ -21,24 +21,24 @@ public class FavoriteSong {
 	value = "1") int id;
 	
 	@OneToOne(cascade = CascadeType.MERGE)
-	@JoinColumn(name = "FavoriteSong_song_id", referencedColumnName = "song_id") 
+	@JoinColumn(name = "fav_song_song_id", referencedColumnName = "song_id") 
 	private Song song;
 	
 	@OneToOne(cascade = CascadeType.MERGE)
-	@JoinColumn(name = "FavoriteSong_user_id", referencedColumnName = "user_id") 
-	private Song user;
+	@JoinColumn(name = "fav_song_user_id", referencedColumnName = "user_id") 
+	private User user;
 
 	public FavoriteSong() {
 		super();
 	}
 
-	public FavoriteSong(Song song, Song user) {
+	public FavoriteSong(Song song, User user) {
 		super();
 		this.song = song;
 		this.user = user;
 	}
 
-	public FavoriteSong(int id, Song song, Song user) {
+	public FavoriteSong(int id, Song song, User user) {
 		super();
 		this.id = id;
 		this.song = song;
