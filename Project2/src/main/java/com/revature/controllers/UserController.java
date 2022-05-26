@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.models.ClientMessage;
+import com.revature.models.Comment;
 import com.revature.models.User;
 import com.revature.services.UserService;
 
@@ -33,38 +34,56 @@ import io.swagger.annotations.ApiOperation;
 @Api(value = "UserRestController", tags = {"REST controller related to User Entities"})
 public class UserController {
 
+	
 	@Autowired
 	private UserService userServ;
-	 // get user by id
+
 	
-	@ApiOperation(value="Find user by id number", notes="Provide an id to lookup a specific user from the API", response = User.class)
-	 @GetMapping(path = "/user") 
-	 public @ResponseBody User getById(@RequestParam(value = "id", name = "id") int id) { 
-		 System.out.println("TEST: " + userServ.findUserById(id));
-		 return userServ.findUserById(id);
-	 }
-	 
-	@GetMapping("/user")
-	@ApiOperation(value="Find all users")
-	public @ResponseBody List<User> getAll() {
-		return userServ.findAllUsers();
-	}
+	// Create new user
 	@PostMapping("/user")
 	@ApiOperation(value="Create new user entity")
 	public @ResponseBody ClientMessage createUser(@RequestBody User user) {
 		return userServ.createUser(user) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 	
-	@PutMapping("/user")
-	@ApiOperation(value="Update user entity")
-	public @ResponseBody ClientMessage updateCandy(@RequestBody User user) {
-		return userServ.updateUser(user) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
+	
+	// Find all users
+	@GetMapping("/users")
+	@ApiOperation(value="Find all users")
+	public @ResponseBody List<User> getAll() {
+		return userServ.getAllUsers();
 	}
 	
-	@DeleteMapping("/user")
-	@ApiOperation(value="Remove user entity")
-	public @ResponseBody ClientMessage deleteCandy(@RequestBody User user) {
-		return userServ.deleteUser(user) ? DELETION_SUCCESSFUL : DELETION_FAILED;
-	}
+	
+	 // Find user by ID
+	 @ApiOperation(value="Find user by id number", notes="Provide an id to lookup a specific user from the API", response = User.class)
+	 @GetMapping("/user") 
+	 public @ResponseBody User getById(@RequestParam(value = "user_id", name = "user_id") int user_id) { 
+		 System.out.println("TEST: " + userServ.getUserById(user_id));
+		 return userServ.getUserById(user_id);
+	 }
+
+	
+	 // Update user
+	 @ApiOperation(value="Update user entity")
+	 @PutMapping(path = "/user")
+	 public @ResponseBody ClientMessage updateCandy(@RequestBody User user) {
+		 return userServ.updateUser(user) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
+	 }
+	
+	//update User Password by user_id
+	@ApiOperation(value="Update User Password by user_id", notes="Provide a password and id to lookup a specific comment password from the API and edit it", response = User.class)
+	@PutMapping(path = "/userpassword")
+	 public @ResponseBody ClientMessage updateUserPassword(@RequestBody User user) { 
+		 return userServ.updateUserPassword(user) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
+	 }
+	
+	
+	 // Delete User
+	 @DeleteMapping("/user")
+	 @ApiOperation(value="Remove user entity")
+	 public @ResponseBody ClientMessage deleteCandy(@RequestBody User user) {
+		 return userServ.deleteUser(user) ? DELETION_SUCCESSFUL : DELETION_FAILED;
+	 }
 
 }

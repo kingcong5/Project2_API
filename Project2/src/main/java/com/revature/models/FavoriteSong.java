@@ -20,11 +20,13 @@ public class FavoriteSong {
 	required = true,
 	value = "1") int id;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "song_id", referencedColumnName = "song_id") Song song;
+	@OneToOne(cascade = CascadeType.MERGE)
+	@JoinColumn(name = "FavoriteSong_song_id", referencedColumnName = "song_id") 
+	private Song song;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "user_id", referencedColumnName = "user_id") Song user;
+	@OneToOne(cascade = CascadeType.MERGE)
+	@JoinColumn(name = "FavoriteSong_user_id", referencedColumnName = "user_id") 
+	private Song user;
 
 	public FavoriteSong() {
 		super();
