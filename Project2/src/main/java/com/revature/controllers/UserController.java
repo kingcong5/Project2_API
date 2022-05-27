@@ -20,11 +20,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.revature.models.ClientMessage;
 import com.revature.models.Comment;
 import com.revature.models.User;
+import com.revature.services.JwtService;
 import com.revature.services.UserService;
 
+import io.jsonwebtoken.security.InvalidKeyException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
@@ -37,6 +40,8 @@ public class UserController {
 	
 	@Autowired
 	private UserService userServ;
+	
+	private JwtService jwtServ;
 
 	
 	// Create new user
@@ -85,5 +90,19 @@ public class UserController {
 	 public @ResponseBody ClientMessage deleteCandy(@RequestBody User user) {
 		 return userServ.deleteUser(user) ? DELETION_SUCCESSFUL : DELETION_FAILED;
 	 }
+	 
+	 // Login User
+	 @GetMapping("/login")
+	 @ApiOperation(value="Login user")
+	 public @ResponseBody String login(@RequestParam(value = "user_username", name = "user_username") String user_username, @RequestParam(value = "user_password", name = "user_password") String user_password) throws InvalidKeyException, JsonProcessingException {
+		 User u = userServ.login(user_username, user_password);
+		 if(u != null) {
+			 return jwtServ.createJwt(u);
+		 }
+		 else
+			 return "AUTHENTICATION FAILED";
+	 }
+
+
 
 }
