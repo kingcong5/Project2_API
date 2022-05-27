@@ -8,10 +8,8 @@
 - Yugal Subedi - Wizardly Scribe
 - Jacob Shaw - Support Engineer
 
-
 ## Project Introduction:
 We will be creating a music based social media platform, where users can share and discuss the music they like with other people. 
-
 
 ## Tech Stack:
 - Spring Framework
@@ -32,12 +30,8 @@ We will be creating a music based social media platform, where users can share a
 - Swagger
 - JUnit Tests
 
-
 ## API: Spotify Web API
 We will use this API to retrieve song information when a User adds a song to their profile or a post.
-
-
-
 
 ## User Stories
 - User can register
@@ -55,7 +49,6 @@ We will use this API to retrieve song information when a User adds a song to the
 - User can comment on other user’s profiles
 - User can search for other users
 - User can follow other users
-
 
 ## Stretch Goals:
 Embedded spotify song previews in posts, so others can hear a brief snippet without having to open spotify.
@@ -80,7 +73,8 @@ Admins can delete posts, comments, and profile’s directly from the webpage.
 # Swagger Documentation
 
 ## Testing URL
-http://localhost:8080/swagger-ui.html#/
+- Program must be running first
+- http://localhost:8080/swagger-ui.html#/
 
 ## User Related
 <img src="./imgs/swagger/swagger_user.png" style="background-color: #000000" width="600">
