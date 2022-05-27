@@ -75,3 +75,45 @@ Admins can delete posts, comments, and profile’s directly from the webpage.
 <br>
 <img src="./imgs/image2.png" style="background-color: #000000;">
 <br>
+<br>
+
+# Swagger Documentation
+
+## Testing URL
+http://localhost:8080/swagger-ui.html#/
+
+## User Related
+<img src="./imgs/swagger/swagger_user.png" style="background-color: #000000" width="600">
+<br>
+<br>
+
+## Demo Sending User Creation Query
+<img src="./imgs/swagger/swagger_userDemo1.png" style="background-color: #000000" width="600">
+<br>
+<img src="./imgs/swagger/swagger_userDemo2.png" style="background-color: #000000" width="600">
+<br>
+<br>
+
+## Song Related
+<img src="./imgs/swagger/swagger_song.png" style="background-color: #000000" width="600">
+<br>
+<br>
+
+## Favorite Song Related
+<img src="./imgs/swagger/swagger_favoriteSong.png" style="background-color: #000000" width="600">
+<br>
+<br>
+
+## Post Related
+<img src="./imgs/swagger/swagger_post.png" style="background-color: #000000" width="600">
+<br>
+<br>
+
+## Comment Related
+<img src="./imgs/swagger/swagger_comment.png" style="background-color: #000000" width="600">
+<br>
+<br>
+
+## Demo Comment Showing Connection to Post, Song, and User
+<img src="./imgs/swagger/swagger_comment_example.png" style="background-color: #000000" width="600">
+<br>
