@@ -1,6 +1,6 @@
 package com.revature.services;
 
-import java.util.List;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -66,6 +66,13 @@ public class UserServiceImpl implements UserService{
 	public boolean deleteUser(User user) {
 		userRepo.delete(user);
 		return true;
+	}
+
+	// Login User
+	@Override
+	public User login(String username, String password) {
+		Optional<User> users = userRepo.findAll().stream().filter(u -> (u.getUsername().equals(username) && u.getPassword().equals(password))).findFirst();
+		return (users.isPresent() ? users.get() : null);
 	}
 
 }

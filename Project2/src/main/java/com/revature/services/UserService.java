@@ -24,4 +24,7 @@ public interface UserService {
 	// Delete User
 	boolean deleteUser(User user);
 	
+	// Login User
+	User login(String f_name, String password);
+	
 }
