@@ -33,6 +33,7 @@ class CommentTest {
 		assertNull(c.getUser_id());
 		assertNull(c.getComment_likes());
 		assertNull(c.getPost_id());
+		
 	}
 
 	@Test
