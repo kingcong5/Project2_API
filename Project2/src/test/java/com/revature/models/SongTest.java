@@ -29,7 +29,7 @@ class SongTest {
 	@Test
 	void testSongIntStringStringStringStringLongString() {
 		Song s = new Song();
-<<<<<<< HEAD
+
 		
 		s.setName("Whodini");
 		s.setArtist("Bloke");
@@ -47,11 +47,6 @@ class SongTest {
 		
 	}
 
-=======
-		assertNull(s.getId());
-		
-	}
-
 	@Test
 	void testSongStringStringStringStringLongString() {
 		Song s = new Song();
@@ -63,17 +58,5 @@ class SongTest {
 		assertNull(s.getUrl());
 	}
 
-	@Test
-	void testSongIntStringStringStringStringLongString() {
-		Song s = new Song();
-		assertNull(s.getId());
-		assertNull(s.getName());
-		assertNull(s.getArtist());
-		assertNull(s.getAlbum());
-		assertNull(s.getArt());
-		assertNull(s.getLength());
-		assertNull(s.getUrl());
-	}
 
->>>>>>> main
 }

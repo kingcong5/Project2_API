@@ -40,7 +40,7 @@ class UserTest {
 	@Test
 	void testUserIntStringStringStringStringString() {
 		User u = new User();
-<<<<<<< HEAD
+
 		
 		u.setF_name("Mike");
 		u.setL_name("Wepps");
@@ -53,16 +53,7 @@ class UserTest {
 		assertEquals("Rihanna", u.getFavorite_artist());
 		assertEquals("mick", u.getUsername());
 		assertEquals("Forever1", u.getPassword());
-		
-		
-=======
-		assertNull(u.getUser_id());
-		assertNull(u.getF_name());
-		assertNull(u.getL_name());
-		assertNull(u.getFavorite_artist());
-		assertNull(u.getUsername());
-		assertNull(u.getPassword());
->>>>>>> main
+
 	}
 
 }
