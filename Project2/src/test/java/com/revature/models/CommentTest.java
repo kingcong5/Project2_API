@@ -26,24 +26,29 @@ class CommentTest {
 	void tearDown() throws Exception {
 	}
 
+	@SuppressWarnings("unused")
 	@Test
 	void testCommentStringIntIntInt() {
 		Comment c = new Comment();
 		assertNull(c.getComment_body());
-		assertNull(c.getUser_id());
+		assertNull(c.getUser());
 		assertNull(c.getComment_likes());
+<<<<<<< HEAD
 		assertNull(c.getPost_id());
 		
+=======
+		assertNull(c.getPost());
+>>>>>>> main
 	}
 
 	@Test
 	void testCommentIntStringIntIntInt() {
 		Comment c = new Comment();
-		assertNull(c.getPost_id());
+//		assertNull(c.getPost_id());
 		assertNull(c.getComment_body());
-		assertNull(c.getUser_id());
+//		assertNull(c.getUser_id());
 		assertNull(c.getComment_likes());
-		assertNull(c.getPost_id());
+//		assertNull(c.getPost_id());
 	}
 
 }
