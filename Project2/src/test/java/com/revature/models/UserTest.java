@@ -27,16 +27,6 @@ class UserTest {
 	}
 
 	@Test
-	void testHashCode() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testUser() {
-		fail("Not yet implemented");
-	}
-
-	@Test
 	void testUserStringStringStringStringString() {
 		User u = new User();
 		assertNull(u.getF_name());
@@ -49,12 +39,20 @@ class UserTest {
 	@Test
 	void testUserIntStringStringStringStringString() {
 		User u = new User();
-		assertNull(u.getId());
-		assertNull(u.getF_name());
-		assertNull(u.getL_name());
-		assertNull(u.getFavorite_artist());
-		assertNull(u.getUsername());
-		assertNull(u.getPassword());
+		
+		u.setF_name("Mike");
+		u.setL_name("Wepps");
+		u.setFavorite_artist("Rihanna");
+		u.setUsername("mick");
+		u.setPassword("Forever1");
+		
+		assertEquals("Mike", u.getF_name());
+		assertEquals("Wepps", u.getL_name());
+		assertEquals("Rihanna", u.getFavorite_artist());
+		assertEquals("mick", u.getUsername());
+		assertEquals("Forever1", u.getPassword());
+		
+		
 	}
 
 }
