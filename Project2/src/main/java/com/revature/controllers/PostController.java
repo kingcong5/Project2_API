@@ -9,6 +9,7 @@ import static com.revature.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,6 +32,8 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/api")
 @Api(value = "PostRestController", tags = {"REST controller related to Post Entities"})
 public class PostController {
+	
+	private static Logger log = Logger.getLogger(PostController.class);
 
 		
 	@Autowired
@@ -41,6 +44,9 @@ public class PostController {
 	@PostMapping("/post")
 	@ApiOperation(value="Create new post entity")
 	public @ResponseBody ClientMessage createPost(@RequestBody Post post) {
+		
+		log.info("Creating post...");
+		
 		return comServ.createPost(post) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 	
@@ -49,6 +55,9 @@ public class PostController {
 	@GetMapping("/posts")
 	@ApiOperation(value="Find all posts")
 	public @ResponseBody List<Post> getAll() {
+		
+		log.info("Getting all posts...");
+		
 		return comServ.getAllPosts();
 	}
  
@@ -57,6 +66,9 @@ public class PostController {
 	 @ApiOperation(value="Find post by id number", notes="Provide an id to lookup a specific post from the API", response = Post.class)
 	 @GetMapping(path = "/post") 
 	 public @ResponseBody Post getPostById(@RequestParam(value = "post_id", name = "post_id") int post_id) { 
+		 
+		 log.info("Getting post by id...");
+		 
 		 System.out.println("TEST: " + comServ.getPostById(post_id));
 		 return comServ.getPostById(post_id); 
 	 }
@@ -66,6 +78,9 @@ public class PostController {
 	@ApiOperation(value="Update Post Body and likes by id number", notes="Provide a body and id to lookup a specific post body from the API and edit it anbd attached likes", response = Post.class)
 	@PutMapping(path = "/post")
 	 public @ResponseBody ClientMessage updatePost(@RequestBody Post post) { 
+		
+		log.info("Updating post...");
+		
 		 return comServ.updatePost(post) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 	 }
 	
@@ -74,6 +89,9 @@ public class PostController {
 	@ApiOperation(value="Update Post Body by id number", notes="Provide a body and id to lookup a specific post body from the API and edit it", response = Post.class)
 	@PutMapping(path = "/postbody")
 	 public @ResponseBody ClientMessage updatePostBody(@RequestBody Post post) { 
+		
+		log.info("Updating post body...");
+		
 		 return comServ.updatePostBody(post) ? UPDATE_SUCCESSFUL : UPDATE_FAILED;
 	 }
 	
@@ -82,6 +100,9 @@ public class PostController {
 	@DeleteMapping("/post")
 	@ApiOperation(value="Remove post entity")
 	public @ResponseBody ClientMessage deletePost(@RequestBody Post post) {
+		
+		log.info("Deleting post...");
+		
 		return comServ.deletePost(post) ? DELETION_SUCCESSFUL : DELETION_FAILED;
 	}
 
