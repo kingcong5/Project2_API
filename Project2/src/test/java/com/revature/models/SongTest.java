@@ -47,16 +47,5 @@ class SongTest {
 		
 	}
 
-	@Test
-	void testSongStringStringStringStringLongString() {
-		Song s = new Song();
-		assertNull(s.getName());
-		assertNull(s.getArtist());
-		assertNull(s.getAlbum());
-		assertNull(s.getArt());
-		assertNull(s.getLength());
-		assertNull(s.getUrl());
-	}
-
 
 }
