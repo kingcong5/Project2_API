@@ -94,13 +94,8 @@ public class UserController {
 	 // Login User
 	 @GetMapping("/login")
 	 @ApiOperation(value="Login user")
-	 public @ResponseBody String login(@RequestParam(value = "user_username", name = "user_username") String user_username, @RequestParam(value = "user_password", name = "user_password") String user_password) throws InvalidKeyException, JsonProcessingException {
-		 User u = userServ.login(user_username, user_password);
-		 if(u != null) {
-			 return jwtServ.createJwt(u);
-		 }
-		 else
-			 return "AUTHENTICATION FAILED";
+	 public @ResponseBody User login(@RequestParam(value = "user_username", name = "user_username") String user_username, @RequestParam(value = "user_password", name = "user_password") String user_password) throws InvalidKeyException, JsonProcessingException {
+		 return userServ.login(user_username, user_password);
 	 }
 
 
