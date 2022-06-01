@@ -27,33 +27,25 @@ class SongTest {
 	}
 
 	@Test
-	void testSong() {
+	void testSongIntStringStringStringStringLongString() {
 		Song s = new Song();
-		assertNull(s.id);
+
+		
+		s.setName("Whodini");
+		s.setArtist("Bloke");
+		s.setAlbum("Mavis");
+		s.setArt("Bike");
+		s.setLength(5L);
+		s.setUrl("www.example.com");
+		
+		assertEquals("Whodini", s.getName());
+		assertEquals("Bloke", s.getArtist());
+		assertEquals("Mavis", s.getAlbum());
+		assertEquals("Bike", s.getArt());
+		assertEquals(5L, s.getLength());
+		assertEquals("www.example.com", s.getUrl());
 		
 	}
 
-	@Test
-	void testSongStringStringStringStringLongString() {
-		Song s = new Song();
-		assertNull(s.getName());
-		assertNull(s.getArtist());
-		assertNull(s.getAlbum());
-		assertNull(s.getArt());
-		assertNull(s.getLength());
-		assertNull(s.getUrl());
-	}
-
-	@Test
-	void testSongIntStringStringStringStringLongString() {
-		Song s = new Song();
-		assertNull(s.id);
-		assertNull(s.getName());
-		assertNull(s.getArtist());
-		assertNull(s.getAlbum());
-		assertNull(s.getArt());
-		assertNull(s.getLength());
-		assertNull(s.getUrl());
-	}
 
 }
