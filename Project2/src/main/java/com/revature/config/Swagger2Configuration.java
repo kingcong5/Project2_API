@@ -32,9 +32,9 @@ public class Swagger2Configuration {
 			"This API is a Twitter Clone where users can build and share their music interests.",
 			"1.0",
 			"Free to use",
-			new springfox.documentation.service.Contact("", "", ""),
+			new springfox.documentation.service.Contact("Team Alchemy", "teamalchemy.com", "magic@teamalchemy.com"),
 			"API License",
-			"",
+			"http://teamalchemy.com",
 			Collections.emptyList()
 		);
 	} 

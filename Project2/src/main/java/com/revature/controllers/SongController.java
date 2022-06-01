@@ -9,6 +9,7 @@ import static com.revature.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -36,12 +37,17 @@ import com.revature.services.SongService;
 @Api(value = "SongRestController", description = "REST controller releated to song entities")
 public class SongController {
 	
+	private static Logger log = Logger.getLogger(SongController.class);
+	
 	@Autowired 
 	private SongService sserv;
 	
 	@ApiOperation(value="Find song by id number", notes="Provide an id to lookup specific song from the API", response = Song.class)
 	@GetMapping(path = "/song")
 	public @ResponseBody Song getById(@RequestParam(value = "id", name = "id") int id) {
+		
+		log.info("Getting song by id...");
+		
 		return sserv.getSongById(id);
 		
 	}
@@ -49,18 +55,27 @@ public class SongController {
 	@GetMapping("/songs")
 	@ApiOperation(value="find all songs")
 	public @ResponseBody List<Song> getAll(){
+		
+		log.info("Getting all songs...");
+		
 		return sserv.getAllSongs();
 	}
 	
 	@PostMapping("/song")
 	@ApiOperation(value="Create new song entity")
 	public @ResponseBody ClientMessage createSong(@RequestBody Song song) {
+		
+		log.info("Creating song...");
+		
 		return sserv.createSong(song) ? CREATION_SUCCESSFUL : CREATION_FAILED;
 	}
 	
 	@PutMapping("/song")
 	@ApiOperation(value="Update song entity")
 	public @ResponseBody ClientMessage updateSong(@RequestBody Song song) {
+		
+		log.info("Updating song...");
+		
 		return sserv.updateSong(song) ? UPDATE_SUCCESSFUL : UPDATE_FAILED ;
 		
 	}
@@ -68,6 +83,9 @@ public class SongController {
 	@DeleteMapping("/song")
 	@ApiOperation(value="Remove song entity")
 	public @ResponseBody ClientMessage deleteSong(@RequestBody Song song) {
+		
+		log.info("Deleting song...");
+		
 		return sserv.deleteSong(song) ? DELETION_SUCCESSFUL : DELETION_FAILED;
 	}
 }
