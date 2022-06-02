@@ -11,6 +11,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,9 +24,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.revature.models.ClientMessage;
-import com.revature.models.Comment;
+//import com.revature.models.Comment;
 import com.revature.models.User;
-import com.revature.services.JwtService;
 import com.revature.services.UserService;
 
 import io.jsonwebtoken.security.InvalidKeyException;
@@ -35,6 +35,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = {"http://localhost:5500/", "http://127.0.0.1:5500/", "http://localhost:4200/", "http://127.0.0.1:5501/", "http://localhost:8080/", "http://127.0.0.1:8080/", "http://localhost:5502/", "http://127.0.0.1:5502/"})
 @Api(value = "UserRestController", tags = {"REST controller related to User Entities"})
 public class UserController {
 	
@@ -44,7 +45,7 @@ public class UserController {
 	@Autowired
 	private UserService userServ;
 	
-	private JwtService jwtServ;
+//	private JwtService jwtServ;
 
 	
 	// Create new user
@@ -115,16 +116,9 @@ public class UserController {
 	 // Login User
 	 @GetMapping("/login")
 	 @ApiOperation(value="Login user")
-	 public @ResponseBody String login(@RequestParam(value = "user_username", name = "user_username") String user_username, @RequestParam(value = "user_password", name = "user_password") String user_password) throws InvalidKeyException, JsonProcessingException {
-		
-		 log.info("Logging in user...");
-		 
-		 User u = userServ.login(user_username, user_password);
-		 if(u != null) {
-			 return jwtServ.createJwt(u);
-		 }
-		 else
-			 return "AUTHENTICATION FAILED";
+	 public @ResponseBody User login(@RequestParam(value = "user_username", name = "user_username") String user_username, @RequestParam(value = "user_password", name = "user_password") String user_password) throws InvalidKeyException, JsonProcessingException {
+		 return userServ.login(user_username, user_password);
+
 	 }
 
 
