@@ -85,7 +85,7 @@ public class UserController {
 	 // Update user
 	 @ApiOperation(value="Update user entity")
 	 @PutMapping(path = "/user")
-	 public @ResponseBody ClientMessage updateCandy(@RequestBody User user) {
+	 public @ResponseBody ClientMessage updateUser(@RequestBody User user) {
 		 
 		 log.info("Updating user...");
 		 
@@ -106,7 +106,7 @@ public class UserController {
 	 // Delete User
 	 @DeleteMapping("/user")
 	 @ApiOperation(value="Remove user entity")
-	 public @ResponseBody ClientMessage deleteCandy(@RequestBody User user) {
+	 public @ResponseBody ClientMessage deleteUser(@RequestBody User user) {
 		 
 		 log.info("Deleting user...");
 		 

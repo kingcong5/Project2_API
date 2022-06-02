@@ -43,30 +43,33 @@ public class Post {
 	value = "4")
 	private int post_likes;
 	
+	@Column(name="post_song", nullable=false)
+	@ApiModelProperty(name="post_song", 
+	notes="a String value that serves as the post song spotify id",
+	required = true,
+	value = "test post_song")
+	private String post_song;
+	
 	@OneToOne(cascade = CascadeType.MERGE)
 	@JoinColumn(name = "Post_user_id", referencedColumnName = "user_id")
 	private User user;
-	
-	@OneToOne(cascade = CascadeType.MERGE)
-	@JoinColumn(name = "Post_song_id", referencedColumnName = "song_id")
-	private Song song;
 
 	public Post() {
 		super();
 	}
 
-	public Post(Song song, String post_body, int post_likes, User user) {
+	public Post(String post_song, String post_body, int post_likes, User user) {
 		super();
-		this.song = song;
+		this.post_song = post_song;
 		this.post_body = post_body;
 		this.post_likes = post_likes;
 		this.user = user;
 	}
 
-	public Post(int post_id, Song song, String post_body, int post_likes, User user) {
+	public Post(int post_id, String post_song, String post_body, int post_likes, User user) {
 		super();
 		this.post_id = post_id;
-		this.song = song;
+		this.post_song = post_song;
 		this.post_body = post_body;
 		this.post_likes = post_likes;
 		this.user = user;
