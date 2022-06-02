@@ -20,3 +20,7 @@
 2022-06-01 21:45:41 INFO [com.revature.controllers.UserController]: Getting user by id...
 2022-06-01 21:45:41 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
 2022-06-01 21:45:41 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:52:56 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 1
+2022-06-01 21:52:56 INFO [com.revature.controllers.UserController]: Getting user by id...
+2022-06-01 21:52:56 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:52:56 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
