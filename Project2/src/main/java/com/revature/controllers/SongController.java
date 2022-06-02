@@ -11,7 +11,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,17 +22,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.revature.models.ClientMessage;
+import com.revature.models.Song;
+import com.revature.services.SongService;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-
-import com.revature.models.Song;
-import com.revature.models.ClientMessage;
-import com.revature.services.SongService;
 
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = {"http://localhost:5500/", "http://127.0.0.1:5500/", "http://localhost:4200/", "http://127.0.0.1:5501/", "http://localhost:8080/", "http://127.0.0.1:8080/" })
+@CrossOrigin(origins = {"http://localhost:5500/", "http://127.0.0.1:5500/", "http://localhost:4200/", "http://127.0.0.1:5501/", "http://localhost:8080/", "http://127.0.0.1:8080/", "http://localhost:5502/", "http://127.0.0.1:5502/"})
 @Api(value = "SongRestController", description = "REST controller releated to song entities")
 public class SongController {
 	

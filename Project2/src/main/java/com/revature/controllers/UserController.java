@@ -24,9 +24,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.revature.models.ClientMessage;
-import com.revature.models.Comment;
+//import com.revature.models.Comment;
 import com.revature.models.User;
-import com.revature.services.JwtService;
 import com.revature.services.UserService;
 
 import io.jsonwebtoken.security.InvalidKeyException;
@@ -36,6 +35,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = {"http://localhost:5500/", "http://127.0.0.1:5500/", "http://localhost:4200/", "http://127.0.0.1:5501/", "http://localhost:8080/", "http://127.0.0.1:8080/", "http://localhost:5502/", "http://127.0.0.1:5502/"})
 @Api(value = "UserRestController", tags = {"REST controller related to User Entities"})
 public class UserController {
 	
@@ -45,7 +45,7 @@ public class UserController {
 	@Autowired
 	private UserService userServ;
 	
-	private JwtService jwtServ;
+//	private JwtService jwtServ;
 
 	
 	// Create new user
@@ -72,7 +72,6 @@ public class UserController {
 	
 	 // Find user by ID
 	 @ApiOperation(value="Find user by id number", notes="Provide an id to lookup a specific user from the API", response = User.class)
-	 @CrossOrigin(origins = {"http://localhost:5500/", "http://127.0.0.1:5500/", "http://localhost:4200/", "http://127.0.0.1:5501/", "http://localhost:8080/", "http://127.0.0.1:8080/" })
 	 @GetMapping("/user") 
 	 public @ResponseBody User getById(@RequestParam(value = "user_id", name = "user_id") int user_id) { 
 		 
