@@ -1,0 +1,22 @@
+2022-06-01 21:43:45 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 1
+2022-06-01 21:44:11 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 1
+2022-06-01 21:44:12 INFO [com.revature.controllers.UserController]: Getting user by id...
+2022-06-01 21:44:12 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:44:12 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:44:22 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 1
+2022-06-01 21:44:22 INFO [com.revature.controllers.UserController]: Getting user by id...
+2022-06-01 21:44:22 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:44:22 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:45:13 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 1
+2022-06-01 21:45:14 INFO [com.revature.controllers.UserController]: Getting user by id...
+2022-06-01 21:45:14 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:45:14 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:45:24 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 1
+2022-06-01 21:45:25 INFO [com.revature.controllers.UserController]: Getting user by id...
+2022-06-01 21:45:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:45:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:45:38 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=User(user_id=1, f_name=null, l_name=null, favorite_artist=null, username=null, password=null), spotifyId=7zAt4tdL44D3VuzsvM0N8n)
+2022-06-01 21:45:41 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 1
+2022-06-01 21:45:41 INFO [com.revature.controllers.UserController]: Getting user by id...
+2022-06-01 21:45:41 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
+2022-06-01 21:45:41 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 1
