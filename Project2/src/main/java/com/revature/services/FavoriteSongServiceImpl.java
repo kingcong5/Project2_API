@@ -36,7 +36,7 @@ public class FavoriteSongServiceImpl implements FavoriteSongService {
 	@Override
 	public boolean updateFavoriteSong(FavoriteSong favoriteSong) {
 		FavoriteSong target = frepo.findById(favoriteSong.getId());
-		target.setSong(favoriteSong.getSong());	
+		target.setSpotifyId(favoriteSong.getSpotifyId());	
 		target.setUser(favoriteSong.getUser());
 		return (frepo.save(target) != null) ? true : false;
 		}
