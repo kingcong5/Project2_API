@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class CommentTest {
+class UserJwtDTOTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -26,18 +26,21 @@ class CommentTest {
 	void tearDown() throws Exception {
 	}
 
-	@SuppressWarnings("unused")
 	@Test
-	void testCommentStringIntIntInt() {
-		Comment c = new Comment();
+	void testUserJwtDTOStringStringStringStringString() {
+		UserJwtDTO ujwtd = new UserJwtDTO();
 		
-		c.setComment_body("This is a test");
-		c.setUser(null);
-		c.setComment_likes(5);
+		ujwtd.setF_name("Maverick");
+		ujwtd.setL_name("Clint");
+		ujwtd.setFavorite_artist("Panterra");
+		ujwtd.setUsername("mavcli");
+		ujwtd.setPassword("password");
 		
-		assertEquals("This is a test", c.getComment_body());
-		assertEquals(null, c.getUser());
-		assertEquals(5, c.getComment_likes());
+		assertEquals("Maverick", ujwtd.getF_name());
+		assertEquals("Clint", ujwtd.getL_name());
+		assertEquals("Panterra", ujwtd.getFavorite_artist());
+		assertEquals("mavcli", ujwtd.getUsername());
+		assertEquals("password", ujwtd.getPassword());
 	}
 
 }

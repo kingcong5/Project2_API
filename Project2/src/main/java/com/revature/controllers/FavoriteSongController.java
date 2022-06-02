@@ -12,6 +12,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,6 +33,7 @@ import com.revature.services.FavoriteSongService;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = {"http://localhost:5500/", "http://127.0.0.1:5500/", "http://localhost:4200/", "http://127.0.0.1:5501/", "http://localhost:8080/", "http://127.0.0.1:8080/" })
 @Api(value = "FavoriteSongRestController", description = "REST controller related to favorite song entities")
 public class FavoriteSongController {
 	
@@ -52,8 +54,8 @@ public class FavoriteSongController {
 
 	@GetMapping("/favoritesongsuser")
 	@ApiOperation(value="find all fav songs of a user")
-	public @ResponseBody List<FavoriteSong> getUser(int id){
-		return fserv.getAllSongsByUser(id);
+	public @ResponseBody List<FavoriteSong> getUser(@RequestParam(value = "user_id", name = "user_id") int user_id){
+		return fserv.getAllSongsByUser(user_id);
 	}
 	
 	@PostMapping("/favoritesong")

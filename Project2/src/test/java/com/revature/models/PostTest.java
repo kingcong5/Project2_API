@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class CommentTest {
+class PostTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -26,18 +26,19 @@ class CommentTest {
 	void tearDown() throws Exception {
 	}
 
-	@SuppressWarnings("unused")
 	@Test
-	void testCommentStringIntIntInt() {
-		Comment c = new Comment();
+	void testPostSongStringIntUser() {
+		Post p = new Post();
 		
-		c.setComment_body("This is a test");
-		c.setUser(null);
-		c.setComment_likes(5);
+		p.setPost_body("nice song");
+		p.setSong(null);
+		p.setPost_likes(7);
+		p.setUser(null);
 		
-		assertEquals("This is a test", c.getComment_body());
-		assertEquals(null, c.getUser());
-		assertEquals(5, c.getComment_likes());
+		assertEquals("nice song", p.getPost_body());
+		assertEquals(null, p.getSong());
+		assertEquals(7, p.getPost_likes());
+		assertEquals(null, p.getUser());
 	}
 
 }

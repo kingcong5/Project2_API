@@ -17,7 +17,7 @@ public interface FavoriteSongRepository extends JpaRepository<FavoriteSong, Inte
 	@Query(value="SELECT * FROM favorite_songs WHERE fav_song_id=?1", nativeQuery = true)
 	public FavoriteSong findById(int id);
 	
-	@Query(value="SELECT * FROM favorite_songs WHERE fav_user_id=?1", nativeQuery = true)
+	@Query(value="SELECT * FROM favorite_songs WHERE fav_song_user_id=?1", nativeQuery = true)
 	public List<FavoriteSong> findAllByUser(int id);
 
 
