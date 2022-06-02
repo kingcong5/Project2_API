@@ -11,6 +11,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -71,6 +72,7 @@ public class UserController {
 	
 	 // Find user by ID
 	 @ApiOperation(value="Find user by id number", notes="Provide an id to lookup a specific user from the API", response = User.class)
+	 @CrossOrigin(origins = {"http://localhost:5500/", "http://127.0.0.1:5500/", "http://localhost:4200/", "http://127.0.0.1:5501/", "http://localhost:8080/", "http://127.0.0.1:8080/" })
 	 @GetMapping("/user") 
 	 public @ResponseBody User getById(@RequestParam(value = "user_id", name = "user_id") int user_id) { 
 		 
