@@ -14,10 +14,10 @@ class FavoriteSongTest {
 	void testFavoriteSongIntSongSong() {
 		FavoriteSong fs = new FavoriteSong();
 		
-		fs.setSong(null);
+		fs.setSpotifyId(null);
 		fs.setUser(null);
 		
-		assertEquals(null, fs.getSong());
+		assertEquals(null, fs.getSpotifyId());
 		assertEquals(null, fs.getUser());
 		
 		

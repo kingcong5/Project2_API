@@ -10,35 +10,20 @@ import org.junit.jupiter.api.Test;
 
 class PostTest {
 
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
-
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
 
 	@Test
 	void testPostSongStringIntUser() {
 		Post p = new Post();
 		
 		p.setPost_body("nice song");
-		p.setSong(null);
+		p.setPost_song("Diamonds");
 		p.setPost_likes(7);
-		p.setUser(null);
+		
 		
 		assertEquals("nice song", p.getPost_body());
-		assertEquals(null, p.getSong());
+		assertEquals("Diamonds", p.getPost_song());
 		assertEquals(7, p.getPost_likes());
-		assertEquals(null, p.getUser());
+		
 	}
 
 }
