@@ -101,19 +101,47 @@ class PostServiceImplTest {
 		
 	}
 	
-	/*
+	
 
 	@Test
 	void testUpdatePost() {
-		fail("Not yet implemented");
+		
+
+		//arrange
+		//here, we are telling Mockito what to do with our mock method calls 
+		//and what to expect in return from that call
+		when(postRepo.save(p)).thenReturn(p);
+		
+		//act
+		//run targeted test method with service injector
+		psi.createPost(p);
+		
+		//assert
+		//verify that the dao mock ran with injector
+		verify(postRepo, times(1)).save(p);
+		
 	}
 
 	@Test
 	void testUpdatePostBody() {
-		fail("Not yet implemented");
+		
+
+		//arrange
+		//here, we are telling Mockito what to do with our mock method calls 
+		//and what to expect in return from that call
+		when(postRepo.save(p)).thenReturn(p);
+		
+		//act
+		//run targeted test method with service injector
+		psi.createPost(p);
+		
+		//assert
+		//verify that the dao mock ran with injector
+		verify(postRepo, times(1)).save(p);
+		
 	}
 	
-	*/
+
 
 	@Test
 	void testDeletePost() {

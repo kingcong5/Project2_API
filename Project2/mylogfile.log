@@ -1679,3 +1679,257 @@
 2022-06-06 00:47:58 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting all songs...
 2022-06-06 00:47:58 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
 2022-06-06 00:47:58 INFO [com.revature.services.SongServiceImpl]: In service layer: Deleting song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:04:31 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:04:31 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:04:31 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:04:31 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:04:31 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:06:44 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:06:44 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:06:44 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:06:44 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:06:44 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:06:44 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:08:22 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:08:22 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:08:22 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:08:22 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:08:22 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:08:22 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:09:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:09:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:09:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:09:25 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:09:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:09:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:10:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:10:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:10:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:10:04 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:10:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:10:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:11:06 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:11:06 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:11:06 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:11:06 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:11:06 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:12:48 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 01:12:48 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting all songs...
+2022-06-06 01:12:48 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:12:48 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:12:48 INFO [com.revature.services.SongServiceImpl]: In service layer: Deleting song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:13:43 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting post by id: 0
+2022-06-06 01:13:43 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting all posts...
+2022-06-06 01:13:43 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:13:43 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:13:43 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:13:43 INFO [com.revature.services.PostServiceImpl]: In service layer: Deleting post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:14:31 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 01:14:31 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 0
+2022-06-06 01:14:31 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all favorite songs...
+2022-06-06 01:14:31 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:14:31 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Deleting favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:14:31 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:15:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Deleting comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:15:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:15:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting comment by id: 0
+2022-06-06 01:15:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:15:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:15:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting all comments...
+2022-06-06 01:15:43 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:15:43 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:15:43 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:15:43 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:15:43 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:15:44 INFO [com.revature.services.CommentServiceImpl]: In service layer: Deleting comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:15:44 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:15:44 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting comment by id: 0
+2022-06-06 01:15:44 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:15:44 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:15:44 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting all comments...
+2022-06-06 01:15:44 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting post by id: 0
+2022-06-06 01:15:44 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting all posts...
+2022-06-06 01:15:44 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:15:44 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:15:44 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:15:44 INFO [com.revature.services.PostServiceImpl]: In service layer: Deleting post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:15:44 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 01:15:44 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 0
+2022-06-06 01:15:44 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all favorite songs...
+2022-06-06 01:15:44 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:15:44 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Deleting favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:15:44 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:15:44 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 01:15:44 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting all songs...
+2022-06-06 01:15:44 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:15:44 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:15:44 INFO [com.revature.services.SongServiceImpl]: In service layer: Deleting song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:28:23 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:28:23 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:28:23 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:28:23 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:28:23 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:28:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Deleting comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:28:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:28:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting comment by id: 0
+2022-06-06 01:28:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:28:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:28:23 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting all comments...
+2022-06-06 01:28:24 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting post by id: 0
+2022-06-06 01:28:24 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting all posts...
+2022-06-06 01:28:24 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:28:24 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:28:24 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:28:24 INFO [com.revature.services.PostServiceImpl]: In service layer: Deleting post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:28:24 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 01:28:24 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 0
+2022-06-06 01:28:24 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all favorite songs...
+2022-06-06 01:28:24 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:28:24 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Deleting favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:28:24 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:28:24 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 01:28:24 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting all songs...
+2022-06-06 01:28:24 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:28:24 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:28:24 INFO [com.revature.services.SongServiceImpl]: In service layer: Deleting song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:31:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:31:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:31:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:31:25 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:31:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:31:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:33:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:33:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:33:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:33:04 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:33:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:33:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:33:21 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:33:21 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:33:21 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:33:21 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:33:21 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:33:21 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:34:34 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:34:34 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:34:34 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:34:34 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:34:34 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:34:34 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:38:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:38:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:38:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:38:33 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:38:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:38:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:39:11 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:39:11 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:39:11 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:39:11 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:39:11 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:39:11 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:40:20 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:40:21 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:40:21 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:40:21 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:40:21 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:40:21 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:40:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:40:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:40:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:40:33 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:40:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:40:33 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:42:41 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:42:41 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:42:41 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:42:41 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:42:41 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:42:41 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:43:03 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:43:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:43:04 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:43:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:43:04 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:45:09 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:45:09 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:45:09 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:45:09 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:45:09 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:45:09 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:45:45 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:45:45 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:45:45 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:45:45 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:45:45 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:45:45 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:45:46 INFO [com.revature.services.CommentServiceImpl]: In service layer: Deleting comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:45:46 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:45:46 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting comment by id: 0
+2022-06-06 01:45:46 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:45:46 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 01:45:46 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting all comments...
+2022-06-06 01:45:46 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting post by id: 0
+2022-06-06 01:45:46 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting all posts...
+2022-06-06 01:45:46 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:45:46 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:45:46 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:45:46 INFO [com.revature.services.PostServiceImpl]: In service layer: Deleting post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 01:45:46 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 01:45:46 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 0
+2022-06-06 01:45:46 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all favorite songs...
+2022-06-06 01:45:46 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:45:46 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Deleting favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:45:46 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 01:45:47 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 01:45:47 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting all songs...
+2022-06-06 01:45:47 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:45:47 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:45:47 INFO [com.revature.services.SongServiceImpl]: In service layer: Deleting song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 01:47:30 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:47:30 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:47:30 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:47:30 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:47:30 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:47:30 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:52:13 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:52:13 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:52:13 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:52:13 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:52:13 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:52:13 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:54:59 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:54:59 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:54:59 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=1, f_name=Larry, l_name=MacBeth, favorite_artist=Halsey, username=hen124, password=pass2)
+2022-06-06 01:54:59 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:54:59 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:54:59 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:55:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:55:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:55:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=1, f_name=Larry, l_name=MacBeth, favorite_artist=Halsey, username=hen124, password=pass2)
+2022-06-06 01:55:25 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:55:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:55:25 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 01:57:55 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 01:57:56 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 01:57:56 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Larry, l_name=MacBeth, favorite_artist=Halsey, username=hen124, password=pass2)
+2022-06-06 01:57:56 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:57:56 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 01:57:56 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 02:01:31 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 02:01:31 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 02:01:31 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 02:01:31 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 02:01:31 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 02:01:31 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 02:10:03 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 02:10:03 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 02:10:03 INFO [com.revature.services.UserServiceImpl]: In service layer: Updating user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 02:10:03 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 02:10:03 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 02:10:03 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 02:19:13 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 02:19:13 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 02:19:13 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 02:19:13 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 02:19:13 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0

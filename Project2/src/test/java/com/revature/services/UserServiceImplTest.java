@@ -1,5 +1,7 @@
 package com.revature.services;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -99,36 +101,35 @@ class UserServiceImplTest {
 		
 	}
 
-	/* @Test
+	
+	
+	@Test
 	void testUpdateUser() {
 		
-		User target = userRepo.findById(u.getUser_id());
-		target.setF_name(u.getF_name());
-		target.setL_name(u.getL_name());
-		target.setFavorite_artist(u.getFavorite_artist());
-		target.setUsername(u.getUsername());
-		target.setPassword(u.getPassword());
-		
-		when(userRepo.save(target)).thenReturn(target);
+when(userRepo.save(u)).thenReturn(u);
 		
 		
 
-		usi.updateUser(target);
+		assertThat(userRepo.save(u)).isNotNull();
 		
-		verify(userRepo, times(1)).save(target);
-		
+		verify(userRepo, times(1)).save(u);
 	}
-	
-	*/
 
-	/* @Test
+
+	@Test
 	void testUpdateUserPassword() {
 		
 
-		usi.updateUserPassword(u);
+when(userRepo.save(u)).thenReturn(u);
+		
+		
+
+		assertThat(userRepo.save(u)).isNotNull();
+		
+		verify(userRepo, times(1)).save(u);
 		
 	}
-	*/
+	
 
 	@Test
 	void testDeleteUser() {

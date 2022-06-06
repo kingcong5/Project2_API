@@ -95,14 +95,27 @@ class SongServiceImplTest {
 		
 	}
 	
-	/*
+	
 
 	@Test
 	void testUpdateSong() {
-		fail("Not yet implemented");
+		
+		//arrange
+				//here, we are telling Mockito what to do with our mock method calls 
+				//and what to expect in return from that call
+				when(songRepo.save(s)).thenReturn(s);
+				
+				//act
+				//run targeted test method with service injector
+				ssi.createSong(s);
+				
+				//assert
+				//verify that the dao mock ran with injector
+				verify(songRepo, times(1)).save(s);
+		
 	}
 	
-	*/
+	
 
 	@Test
 	void testDeleteSong() {

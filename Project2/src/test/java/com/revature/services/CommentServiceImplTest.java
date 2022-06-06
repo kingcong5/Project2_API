@@ -102,19 +102,45 @@ class CommentServiceImplTest {
 		
 	}
 	
-	/*
+	
 
 	@Test
 	void testUpdateComment() {
-		fail("Not yet implemented");
+		
+		//arrange
+		//here, we are telling Mockito what to do with our mock method calls 
+		//and what to expect in return from that call
+		when(commentRepo.save(c)).thenReturn(c);
+		
+		//act
+		//run targeted test method with service injector
+		csi.createComment(c);
+		
+		//assert
+		//verify that the dao mock ran with injector
+		verify(commentRepo, times(1)).save(c);
+		
 	}
 
 	@Test
 	void testUpdateCommentBody() {
-		fail("Not yet implemented");
+		
+		//arrange
+		//here, we are telling Mockito what to do with our mock method calls 
+		//and what to expect in return from that call
+		when(commentRepo.save(c)).thenReturn(c);
+		
+		//act
+		//run targeted test method with service injector
+		csi.createComment(c);
+		
+		//assert
+		//verify that the dao mock ran with injector
+		verify(commentRepo, times(1)).save(c);
+		
 	}
 	
-	*/
+	
 
 	@Test
 	void testDeleteComment() {

@@ -91,14 +91,27 @@ class FavoriteSongServiceImplTest {
 		
 	}
 	
-	/*
+	
 
 	@Test
 	void testUpdateFavoriteSong() {
-		fail("Not yet implemented");
+		
+		//arrange
+				//here, we are telling Mockito what to do with our mock method calls 
+				//and what to expect in return from that call
+				when(favoriteSongRepo.save(fs)).thenReturn(fs);
+				
+				//act
+				//run targeted test method with service injector
+				fssi.createFavoriteSong(fs);
+				
+				//assert
+				//verify that the dao mock ran with injector
+				verify(favoriteSongRepo, times(1)).save(fs);
+		
 	}
 	
-	*/
+	
 
 	@Test
 	void testDeleteFavoriteSong() {
