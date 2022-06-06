@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.models.FavoriteSong;
 import com.revature.repositories.FavoriteSongRepository;
+import com.revature.repositories.UserRepository;
 
 
 @Service
@@ -18,6 +19,11 @@ public class FavoriteSongServiceImpl implements FavoriteSongService {
 	
 	@Autowired
 	private FavoriteSongRepository frepo;
+	
+	@Autowired
+	public FavoriteSongServiceImpl(FavoriteSongRepository dao) {
+		this.frepo = dao;
+	}
 
 	@Override
 	public boolean createFavoriteSong(FavoriteSong favoriteSong) {

@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.models.Song;
 import com.revature.repositories.SongRepository;
+import com.revature.repositories.UserRepository;
 
 
 @Service
@@ -18,6 +19,11 @@ public class SongServiceImpl implements SongService{
 	
 	@Autowired
 	private SongRepository srepo;
+	
+	@Autowired
+	public SongServiceImpl(SongRepository dao) {
+		this.srepo = dao;
+	}
 	
 	@Override
 	public boolean createSong(Song song) {

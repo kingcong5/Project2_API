@@ -1635,3 +1635,47 @@
 2022-06-05 13:42:13 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting all posts...
 2022-06-05 13:42:13 INFO [com.revature.controllers.CommentController]: Getting all comments...
 2022-06-05 13:42:13 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting all comments...
+2022-06-06 00:41:08 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 00:41:08 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 00:41:08 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 00:41:08 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 00:41:08 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 00:41:16 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 00:41:16 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting all songs...
+2022-06-06 00:41:16 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 00:41:16 INFO [com.revature.services.SongServiceImpl]: In service layer: Deleting song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 00:41:25 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting post by id: 0
+2022-06-06 00:41:25 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting all posts...
+2022-06-06 00:41:25 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 00:41:25 INFO [com.revature.services.PostServiceImpl]: In service layer: Deleting post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 00:41:42 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 00:41:42 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 0
+2022-06-06 00:41:42 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all favorite songs...
+2022-06-06 00:41:42 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 00:41:42 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Deleting favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 00:41:52 INFO [com.revature.services.CommentServiceImpl]: In service layer: Deleting comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 00:41:52 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting comment by id: 0
+2022-06-06 00:41:52 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 00:41:52 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting all comments...
+2022-06-06 00:47:57 INFO [com.revature.services.UserServiceImpl]: In service layer: Logging in user: null
+2022-06-06 00:47:57 INFO [com.revature.services.UserServiceImpl]: In service layer: Getting all users...
+2022-06-06 00:47:57 INFO [com.revature.services.UserServiceImpl]: In service layer: creating new user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 00:47:57 INFO [com.revature.services.UserServiceImpl]: In service layer: Deleting user: User(user_id=0, f_name=Henry, l_name=Jackson, favorite_artist=Psy, username=hen123, password=pass)
+2022-06-06 00:47:57 INFO [com.revature.services.UserServiceImpl]: In service layer: Finding user by id: 0
+2022-06-06 00:47:57 INFO [com.revature.services.CommentServiceImpl]: In service layer: Deleting comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 00:47:57 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting comment by id: 0
+2022-06-06 00:47:57 INFO [com.revature.services.CommentServiceImpl]: In service layer: Creating comment: Comment(comment_id=0, comment_body=null, comment_likes=0, post=null, user=null)
+2022-06-06 00:47:57 INFO [com.revature.services.CommentServiceImpl]: In service layer: Getting all comments...
+2022-06-06 00:47:57 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting post by id: 0
+2022-06-06 00:47:57 INFO [com.revature.services.PostServiceImpl]: In service layer: Getting all posts...
+2022-06-06 00:47:57 INFO [com.revature.services.PostServiceImpl]: In service layer: Creating post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 00:47:57 INFO [com.revature.services.PostServiceImpl]: In service layer: Deleting post: Post(post_id=0, post_body=null, post_likes=0, post_song=null, user=null)
+2022-06-06 00:47:57 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 00:47:57 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all songs by user: 0
+2022-06-06 00:47:57 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Getting all favorite songs...
+2022-06-06 00:47:57 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Creating favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 00:47:57 INFO [com.revature.services.FavoriteSongServiceImpl]: In service layer: Deleting favorite song: FavoriteSong(id=0, user=null, spotifyId=null)
+2022-06-06 00:47:58 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting song by id: 0
+2022-06-06 00:47:58 INFO [com.revature.services.SongServiceImpl]: In service layer: Getting all songs...
+2022-06-06 00:47:58 INFO [com.revature.services.SongServiceImpl]: In service layer: Creating song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
+2022-06-06 00:47:58 INFO [com.revature.services.SongServiceImpl]: In service layer: Deleting song: Song(id=0, name=null, artist=null, album=null, art=null, length=0, url=null)
